@@ -3,7 +3,7 @@
 ## B站视频链接：
 ## 资料链接：
 # 产品渲染图
-<img src="picture/QQ20241010-120226.png" alt="图片描述" width="100%" height="auto">
+<img src="picture/Excam.15.png" alt="图片描述" width="100%" height="auto">
 
 # 产品实物图
 
