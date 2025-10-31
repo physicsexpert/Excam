@@ -4,7 +4,7 @@
 ## B站视频链接：
 ## 资料链接：
 # 产品渲染图
-<img src="picture/Excam.15.png" alt="图片描述" width="60%" height="auto">
+<img src="picture/Excam.15.png" alt="图片描述" width="100%" height="auto">
 
 # 产品实物图
 
