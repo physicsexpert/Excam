@@ -73,8 +73,15 @@ sensor.set_vflip(True)
 img_processed = img.scale(x_scale=1, y_scale=1, hint=image.ROTATE_90)
 lcd.write(img)
 ```
-
-
+3。使用Excam运行神经网络模型时，模型训练网站直接生产的代码是不能直接运行的，需要将第21行的
+```
+net = ml.Model("trained.tflite", load_to_fb=uos.stat('trained.tflite')[6] > (gc.mem_free() - (64*1024)))
+```
+改成
+```
+net = ml.Model("/sdcard/trained.tflite", load_to_fb=True)
+```
+同时需要将下载的ei_object_detection.py、labels.txt和trained.tflite这三个文件放到Excam的SD卡中，IDE中运行i_object_detection.py
 
 
 
