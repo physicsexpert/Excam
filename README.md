@@ -60,6 +60,19 @@
 
 # 软件使用说明
 
+1.Excam支持的摄像头有OV5640和OV2640，OV5640的帧数较高，OV2640的帧数较低，所有推荐使用OV5640，其他型号的摄像头未测试。
+
+2.摄像头采集的画面反了的话可以使用下面这段代码将摄像头的画面转换成正确的方向
+```
+sensor.set_hmirror(True)
+sensor.set_vflip(True)
+```
+
+屏幕的方向反了的话可以使用下面这段代码改变屏幕的显示方向
+```
+img_processed = img.scale(x_scale=1, y_scale=1, hint=image.ROTATE_90)
+lcd.write(img)
+```
 
 
 
