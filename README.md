@@ -73,7 +73,7 @@ sensor.set_vflip(True)
 img_processed = img.scale(x_scale=1, y_scale=1, hint=image.ROTATE_90)
 lcd.write(img)
 ```
-3。使用Excam运行神经网络模型时，模型训练网站直接生产的代码是不能直接运行的，需要将第21行的
+3.使用Excam运行神经网络模型时，模型训练网站直接生产的代码是不能直接运行的，需要将第21行的
 ```
 net = ml.Model("trained.tflite", load_to_fb=uos.stat('trained.tflite')[6] > (gc.mem_free() - (64*1024)))
 ```
@@ -83,9 +83,20 @@ net = ml.Model("/sdcard/trained.tflite", load_to_fb=True)
 ```
 同时需要将下载的ei_object_detection.py、labels.txt和trained.tflite这三个文件放到Excam的SD卡中，IDE中运行i_object_detection.py
 
-
-
-
+4.在你的项目中如果需要屏幕显示的话，可以加入下面这段代码
+```
+import display
+lcd = display.SPIDisplay()
+lcd.write(img)
+```
+5.如果需要使用补光灯的话可以使用下面这段代码
+```
+import time
+from pyb import Pin, Timer
+light = Timer(2, freq=50000).channel(1, Timer.PWM, pin=Pin("P6"))
+light.pulse_width_percent(50)  # adjust light 0~100
+```
+6.固件版本需要和OpenMVIDE的软件版本匹配，不匹配的话可能会报错，不确定的话就装4.6.0这个固件版本
 # 参考资料
 OpenMV：https://github.com/openmv
 
