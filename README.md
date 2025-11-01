@@ -13,11 +13,16 @@
 <img src="picture/IMG_20251031_203732.jpg" alt="图片描述" width="50%" height="auto">
 <img src="picture/IMG_20251031_203747.jpg" alt="图片描述" width="50%" height="auto">
 
+## 部分功能展示（色块识别、人脸识别、边缘检测、神经网络）
+<img src="picture/人脸识别.png" alt="图片描述" width="50%" height="auto">
+<img src="picture/神经网络.png" alt="图片描述" width="50%" height="auto">
+<img src="picture/色块识别.png" alt="图片描述" width="50%" height="auto">
+<img src="picture/边缘识别.png" alt="图片描述" width="50%" height="auto">
 
 ## 所有部件一览
 <img src="picture/QQ20251031-205350.png" alt="图片描述" width="50%" height="auto">
 
-
+## 内部结构
 
 # 硬件说明
 ## 排针引脚功能（通过侧面SH1.0的接口引出，可以外接杜邦线或者排线）：
@@ -43,9 +48,9 @@
 
 # 结构说明
 
-调试器外壳采用3D打印制作，总共需要打印五个部分：顶壳，底壳，镜头保护盖，开关，拓展模块，需要用电烙铁压入M2热熔螺母配合M2螺丝进行固定。
+调试器外壳采用3D打印制作，总共需要打印七个部分：主控顶壳，主控底壳，屏幕顶壳，屏幕底壳，镜头保护盖，按键（四个），拓展模块，需要用电烙铁压入M2热熔螺母配合M2螺丝进行固定。
 
-# 固件下载和烧录
+# 固件下载
 硬件焊接组装好之后，需要烧录openmv的固件：
 
 1.下载STM32CubeProgrammer，下载地址：https://www.st.com/en/development-tools/stm32cubeprog.html
@@ -60,7 +65,7 @@
 
 # 软件使用说明
 
-1.Excam支持的摄像头有OV5640和OV2640，OV5640的帧数较高，OV2640的帧数较低，所有推荐使用OV5640，其他型号的摄像头未测试。
+1.Excam支持的摄像头有OV5640和OV2640，OV5640的帧数较高，OV2640的帧数较低，所以推荐使用OV5640，其他型号的摄像头未测试。
 
 2.摄像头采集的画面反了的话可以使用下面这段代码将摄像头的画面转换成正确的方向
 ```
