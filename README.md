@@ -2,7 +2,7 @@
 ## Excam主控采用stm32h7343（stm32h750），搭载1.8寸180°翻转屏，电池，补光灯，RGB灯，按键，SD卡，支持OV5640、OV2640摄像头，支持引脚拓展，兼容openmv固件（引出SWD接口），可以实现色块识别、人脸识别、边缘检测、模板匹配、特征点检测等功能，可以跑一些简单的神经网络模型。
 
 ## B站视频链接：
-## 资料链接：
+## 开源资料链接：https://pan.quark.cn/s/f7dd918dd93f?pwd=DpVU
 # 产品渲染图
 <img src="picture/Excam.15.png" alt="图片描述" width="100%" height="auto">
 
