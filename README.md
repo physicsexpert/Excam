@@ -23,6 +23,9 @@
 <img src="picture/QQ20251031-205350.png" alt="图片描述" width="50%" height="auto">
 
 ## 内部结构
+<img src="picture/内部1.jpg" alt="图片描述" width="50%" height="auto">
+<img src="picture/内部21.jpg" alt="图片描述" width="50%" height="auto">
+<img src="picture/内部3.jpg" alt="图片描述" width="50%" height="auto">
 
 # 硬件说明
 ## 排针引脚功能（通过侧面SH1.0的接口引出，可以外接杜邦线或者排线）：
@@ -31,8 +34,11 @@
 ## 系统框图：
 <img src="picture/QQ20251028-212853.png" alt="图片描述" width="50%" height="auto">
 
+主控采用主频为480Mhz的stm32h743作为主控芯片，也可以使用stm32h750，外接sd卡和摄像头，openmv固件支持的拓展引脚全部引出，在引脚附近还安排了esd防护器件，保证使用安全
+
 ## 系统电源树：
 <img src="picture/QQ20251028-214408.png" alt="图片描述" width="100%" height="auto">
+
 电源的输入端首先经过TI的TPS259261电子保险丝进行防护，电子保险相较于传统的保险丝方案，支持防过压防反接缓启动等综合防护功能。
 
 锂电池充放电管理采用国产开关型充电ICTP5100，支持最大2A的充电电流，配合TI的TPS63070升降压芯片可以实现稳定的电源输出。
@@ -57,9 +63,18 @@
 
 2.使用数据线连接Excam和电脑，按住boot键上电，打开设备调试器可以看到一个DFU设备
 
+<img src="picture/21.png" alt="图片描述" width="50%" height="auto">
+<img src="picture/2.png" alt="图片描述" width="50%" height="auto">
+
 3.打开STM32CubeProgrammer，依次点击usb连接，选择openmv固件下载，推荐下载4.6.0版本的固件，也就是我发的压缩包里的固件
 
+<img src="picture/3.png" alt="图片描述" width="50%" height="auto">
+<img src="picture/4.png" alt="图片描述" width="50%" height="auto">
+<img src="picture/5.png" alt="图片描述" width="50%" height="auto">
+
 4.点击download，看到success之后说明烧录完成
+
+<img src="picture/6.png" alt="图片描述" width="50%" height="auto">
 
 5.重新上电连接openmvIDE就可以正常使用了
 
