@@ -13,7 +13,7 @@
 <img src="picture/IMG_20251031_203732.jpg" alt="图片描述" width="50%" height="auto">
 <img src="picture/IMG_20251031_203747.jpg" alt="图片描述" width="50%" height="auto">
 
-## 部分功能展示（色块识别、人脸识别、边缘检测、神经网络）
+## 部分功能展示（色块识别、人脸识别、边缘检测、目标检测）
 <img src="picture/人脸识别.png" alt="图片描述" width="50%" height="auto">
 <img src="picture/神经网络.png" alt="图片描述" width="50%" height="auto">
 <img src="picture/色块识别.png" alt="图片描述" width="50%" height="auto">
